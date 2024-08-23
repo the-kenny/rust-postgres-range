@@ -155,8 +155,8 @@ mod impls;
 #[cfg(feature = "with-chrono-0_4")]
 mod chrono_04;
 
-#[cfg(feature = "with-decimal-1_0")]
-mod decimal_10;
+// #[cfg(feature = "with-decimal-1")]
+mod decimal_1;
 
 /// The possible sides of a bound.
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
