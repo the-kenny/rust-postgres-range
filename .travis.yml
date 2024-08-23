@@ -1,10 +1,11 @@
 language: rust
 rust:
-- nightly
-- beta
-- 1.40.0
+  - nightly
+  - beta
+  - 1.40.0
 addons:
   postgresql: 9.4
 script:
-- cargo test
-- cargo test --features "with-chrono-0_4"
+  - cargo test
+  - cargo test --features "with-chrono-0_4"
+  - cargo test --features "with-decimal-1"
