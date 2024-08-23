@@ -127,7 +127,7 @@ mod test {
     use std::fmt;
 
     #[cfg(feature = "with-chrono-0_4")]
-    #[cfg(feature = "with-decimal_10")]
+    #[cfg(feature = "with-decimal_1")]
     use chrono_04::{Duration, NaiveDate, NaiveDateTime, NaiveTime, TimeZone, Utc};
     use postgres::types::{FromSql, ToSql};
     use postgres::{Client, NoTls};
@@ -242,7 +242,7 @@ mod test {
         );
     }
     #[test]
-    #[cfg(feature = "with-bigdecimal-0_4")]
+    #[cfg(feature = "with-decimal-1")]
     fn test_numrange_params() {
         let low = Decimal::new(106, 1);
         let high = Decimal::new(206, 1);

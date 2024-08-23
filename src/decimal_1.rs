@@ -1,3 +1,6 @@
-use crate::decimal_10::Decimal;
+use std::str::FromStr;
 
-bounded_normalizable!(Decimal, D);
+use crate::{BoundSided, Normalizable, RangeBound};
+use decimal_1::Decimal;
+
+bounded_normalizable!(Decimal, ::decimal_1::Decimal::from_str("1.0").unwrap());
